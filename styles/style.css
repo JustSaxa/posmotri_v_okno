@@ -134,7 +134,7 @@ ol {
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
-  text-transform: u;
+  text-transform: uppercase;
 }
 
 .content__video-card {
@@ -237,7 +237,9 @@ ol {
   border-left: 1px solid #FFF;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox > span {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: "";
+  display: block;
   width: 15px;
   height: 15px;
   background-color: white;
